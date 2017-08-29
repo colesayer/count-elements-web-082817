@@ -1,4 +1,5 @@
 def count_elements(array)
-  # code goes here
+  element_count = Hash.new(0)
+  array.each { |element| element_count[element] +=1}
+  element_count
 end
- 
